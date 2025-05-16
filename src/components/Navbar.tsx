@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { UserButton } from "@clerk/nextjs";
 import { ModeToggle } from "./ModeToggle";
 import DasboardBtn from "./Dashboard";
+import Link from "next/link";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,12 +53,12 @@ function Navbar() {
             animate={{ scale: isScrolled ? 0.9 : 1 }}
             transition={{ duration: 0.3 }}
           >
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground font-bold">
                   S
                 </div>
                 <span className="font-bold text-2xl">Scrumble</span>
-            </a>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

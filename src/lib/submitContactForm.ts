@@ -1,7 +1,6 @@
 "use server";
 
 import { z } from "zod";
-import { headers } from "next/headers";
 import getResend from "./Resend";
 
 const contactSchema = z.object({

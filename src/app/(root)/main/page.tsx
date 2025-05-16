@@ -15,7 +15,7 @@ import { CANDIDATE_QUICK_ACTIONS, QUICK_ACTIONS } from "@/constant";
 export default function Home() {
   const router = useRouter();
 
-  const { isInterviewer, isCandidate, isLoading } = useUserRole();
+  const { isInterviewer, isLoading } = useUserRole();
   const interviews = useQuery(api.interviews.getMyInterviews);
   const [showModal, setShowModal] = useState(false);
   const [modalType, setModalType] = useState<"start" | "join">();
@@ -96,7 +96,7 @@ export default function Home() {
                 You do not have any interviews scheduled interview
               </p>
               <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6">
-                {CANDIDATE_QUICK_ACTIONS.map((action: any) => (
+                {CANDIDATE_QUICK_ACTIONS.map((action) => (
                   <ActionCard
                     key={action.title}
                     action={action}
