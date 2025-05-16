@@ -8,8 +8,8 @@ import PricingPage from "./_components/Pricing"
 import Footer from "./_components/Footer"
 
 export default function LandingPage() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [mounted, setMounted] = useState(false)
+  const [, setIsScrolled] = useState(false)
+  const [, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)

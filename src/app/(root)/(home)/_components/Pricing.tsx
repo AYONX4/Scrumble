@@ -3,23 +3,13 @@
 import { motion } from "framer-motion";
 import {
     Rocket,
-    Code,
-    Paintbrush,
     Monitor,
-    Zap,
     CircuitBoard,
-    LayoutGrid,
-    Palette,
     Package,
     MessageSquare,
-    Pencil,
-    LockKeyhole,
     Copy,
-    CheckCheck,
     XCircle,
     Building2,
-    Edit2,
-    Code2Icon,
     BookDashed,
     CodeSquare,
 } from "lucide-react";
@@ -28,10 +18,8 @@ import {
   Code2,
   Video,
   ScreenShare,
-  CalendarCheck,
   Star,
   PlayCircle,
-  Smile,
   Users
 } from "lucide-react";
 

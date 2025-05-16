@@ -45,6 +45,7 @@ function DashboardPage() {
       toast.success(`Interview marked as ${status}`);
     } catch (error) {
       toast.error("Failed to update status");
+      console.log(error);
     }
   };
 
